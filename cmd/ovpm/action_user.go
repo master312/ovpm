@@ -10,8 +10,8 @@ import (
 
 	"github.com/sirupsen/logrus"
 	"github.com/cad/ovpm"
-	"github.com/cad/ovpm/api/pb"
-	"github.com/cad/ovpm/errors"
+	"github.com/master312/ovpm/api/pb"
+	"github.com/master312/ovpm/errors"
 	humanize "github.com/dustin/go-humanize"
 	"github.com/olekukonko/tablewriter"
 )

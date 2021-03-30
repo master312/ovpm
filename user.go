@@ -9,7 +9,7 @@ import (
 
 	"github.com/sirupsen/logrus"
 	"github.com/asaskevich/govalidator"
-	"github.com/cad/ovpm/pki"
+	"github.com/master312/ovpm/pki"
 	"github.com/google/uuid"
 	"github.com/jinzhu/gorm"
 )

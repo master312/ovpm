@@ -1,6 +1,6 @@
 # OVPM - OpenVPN Management Server
 
-![Build Status](https://github.com/cad/ovpm/workflows/Go/badge.svg)
+![Build Status](https://github.com/master312/ovpm/workflows/Go/badge.svg)
 [![GitHub version](https://badge.fury.io/gh/cad%2Fovpm.svg)](https://badge.fury.io/gh/cad%2Fovpm)
 [![codecov](https://codecov.io/gh/cad/ovpm/branch/master/graph/badge.svg)](https://codecov.io/gh/cad/ovpm)
 [![GoDoc](https://godoc.org/github.com/cad/ovpm?status.svg)](https://godoc.org/github.com/cad/ovpm)
@@ -70,7 +70,7 @@ $ systemctl enable ovpmd
 Only dependency for ovpm is **OpenVPN>=2.3.3**.
 
 ```bash
-$ go get -u github.com/cad/ovpm/...
+$ go get -u github.com/master312/ovpm/...
 
 # Make sure user nobody and group nogroup is available
 # on the system
@@ -107,9 +107,9 @@ another computer.
 
 # Next Steps
 
-* [User Management](https://github.com/cad/ovpm/wiki/User-Management)
-* [Network Management](https://github.com/cad/ovpm/wiki/Network-Management)
-* [Web Interface](https://github.com/cad/ovpm/wiki/Web-Interface)
+* [User Management](https://github.com/master312/ovpm/wiki/User-Management)
+* [Network Management](https://github.com/master312/ovpm/wiki/Network-Management)
+* [Web Interface](https://github.com/master312/ovpm/wiki/Web-Interface)
 
 # Troubleshooting
 

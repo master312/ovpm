@@ -6,7 +6,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/cad/ovpm/pki"
+	"github.com/master312/ovpm/pki"
 
 	"github.com/cad/ovpm"
 	"github.com/sirupsen/logrus"

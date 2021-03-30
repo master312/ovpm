@@ -16,8 +16,8 @@ import (
 	"time"
 
 	"github.com/asaskevich/govalidator"
-	"github.com/cad/ovpm/pki"
-	"github.com/cad/ovpm/supervisor"
+	"github.com/master312/ovpm/pki"
+	"github.com/master312/ovpm/supervisor"
 	"github.com/coreos/go-iptables/iptables"
 	"github.com/google/uuid"
 	"github.com/jinzhu/gorm"

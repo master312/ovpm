@@ -8,7 +8,7 @@ import (
 	"os"
 
 	"github.com/sirupsen/logrus"
-	"github.com/cad/ovpm/errors"
+	"github.com/master312/ovpm/errors"
 	"github.com/urfave/cli"
 
 	"google.golang.org/grpc"
