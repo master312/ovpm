@@ -972,18 +972,18 @@ func (svr *Server) emitIptables() error {
 					return nil
 				}
 				// enable nat for the user to the destination network n
-				if found {
-					err = ipt.AppendUnique("nat", "POSTROUTING", "-s", userIP.String(), "-o", iface.Name, "-j", "MASQUERADE")
-					if err != nil {
-						logrus.Error(err)
-						return err
-					}
-				} else {
-					err = ipt.Delete("nat", "POSTROUTING", "-s", userIP.String(), "-o", iface.Name, "-j", "MASQUERADE")
-					if err != nil {
-						logrus.Debug(err)
-					}
-				}
+// 				if found {
+// 					err = ipt.AppendUnique("nat", "POSTROUTING", "-s", userIP.String(), "-o", iface.Name, "-j", "MASQUERADE")
+// 					if err != nil {
+// 						logrus.Error(err)
+// 						return err
+// 					}
+// 				} else {
+// 					err = ipt.Delete("nat", "POSTROUTING", "-s", userIP.String(), "-o", iface.Name, "-j", "MASQUERADE")
+// 					if err != nil {
+// 						logrus.Debug(err)
+// 					}
+// 				}
 			}
 		}
 	}
