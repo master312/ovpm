@@ -7,7 +7,7 @@ import (
 
 	"github.com/asaskevich/govalidator"
 	"github.com/master312/ovpm/api/pb"
-	"github.com/cad/ovpm/bundle"
+	"github.com/master312/ovpm/bundle"
 	assetfs "github.com/elazarl/go-bindata-assetfs"
 	"github.com/go-openapi/runtime/middleware"
 	"github.com/grpc-ecosystem/grpc-gateway/runtime"
