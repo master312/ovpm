@@ -1,8 +1,8 @@
 .PHONY: deps build test bundle-webui clean-bundle bundle-swagger proto bundle build
 docker-build:
-	docker run --rm -i -t -e TRAVIS_GO_VERSION=$(TRAVIS_GO_VERSION) -e TRAVIS_BUILD_NUMBER=$(TRAVIS_BUILD_NUMBER) -e TRAVIS_TAG=$(TRAVIS_TAG) -v `pwd`:/fs/src/github.com/cad/ovpm -w /fs/src/github.com/cad/ovpm cadthecoder/ovpm-builder:latest
+	docker run --rm -i -t -e TRAVIS_GO_VERSION=$(TRAVIS_GO_VERSION) -e TRAVIS_BUILD_NUMBER=$(TRAVIS_BUILD_NUMBER) -e TRAVIS_TAG=$(TRAVIS_TAG) -v `pwd`:/fs/src/github.com/master312/ovpm -w /fs/src/github.com/master312/ovpm cadthecoder/ovpm-builder:latest
 docker-build-shell:
-	docker run --rm -i -t -e TRAVIS_GO_VERSION=$(TRAVIS_GO_VERSION) -e TRAVIS_BUILD_NUMBER=$(TRAVIS_BUILD_NUMBER) -e TRAVIS_TAG=$(TRAVIS_TAG) -v `pwd`:/fs/src/github.com/cad/ovpm -w /fs/src/github.com/cad/ovpm cadthecoder/ovpm-builder:latest /bin/bash
+	docker run --rm -i -t -e TRAVIS_GO_VERSION=$(TRAVIS_GO_VERSION) -e TRAVIS_BUILD_NUMBER=$(TRAVIS_BUILD_NUMBER) -e TRAVIS_TAG=$(TRAVIS_TAG) -v `pwd`:/fs/src/github.com/master312/ovpm -w /fs/src/github.com/master312/ovpm cadthecoder/ovpm-builder:latest /bin/bash
 
 development-deps:
 	# grpc related dependencies
@@ -49,12 +49,12 @@ build: bundle
 	@echo Building
 	rm -rf bin/
 	mkdir -p bin/
-	#CGO_ENABLED=0  GOOS=linux go build -ldflags="-w -X 'github.com/cad/ovpm.Version=$(VERSION)' -extldflags '-static'" -o ./bin/ovpm  ./cmd/ovpm
-	#CGO_ENABLED=0  GOOS=linux go build -ldflags="-w -X 'github.com/cad/ovpm.Version=$(VERSION)' -extldflags '-static'" -o ./bin/ovpmd ./cmd/ovpmd
+	#CGO_ENABLED=0  GOOS=linux go build -ldflags="-w -X 'github.com/master312/ovpm.Version=$(VERSION)' -extldflags '-static'" -o ./bin/ovpm  ./cmd/ovpm
+	#CGO_ENABLED=0  GOOS=linux go build -ldflags="-w -X 'github.com/master312/ovpm.Version=$(VERSION)' -extldflags '-static'" -o ./bin/ovpmd ./cmd/ovpmd
 
 	# Link dynamically for now
-	CGO_CFLAGS="-g -O2 -Wno-return-local-addr" go build -ldflags="-X 'github.com/cad/ovpm.Version=$(VERSION)'" -o ./bin/ovpm  ./cmd/ovpm
-	CGO_CFLAGS="-g -O2 -Wno-return-local-addr" go build -ldflags="-X 'github.com/cad/ovpm.Version=$(VERSION)'" -o ./bin/ovpmd ./cmd/ovpmd
+	CGO_CFLAGS="-g -O2 -Wno-return-local-addr" go build -ldflags="-X 'github.com/master312/ovpm.Version=$(VERSION)'" -o ./bin/ovpm  ./cmd/ovpm
+	CGO_CFLAGS="-g -O2 -Wno-return-local-addr" go build -ldflags="-X 'github.com/master312/ovpm.Version=$(VERSION)'" -o ./bin/ovpmd ./cmd/ovpmd
 
 clean-dist:
 	rm -rf dist/

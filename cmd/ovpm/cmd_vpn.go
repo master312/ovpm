@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 	"github.com/asaskevich/govalidator"
-	"github.com/cad/ovpm"
+	"github.com/master312/ovpm"
 	"github.com/master312/ovpm/api/pb"
 	"github.com/master312/ovpm/errors"
 	"github.com/sirupsen/logrus"

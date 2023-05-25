@@ -8,7 +8,7 @@ import (
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/codes"
 
-	"github.com/cad/ovpm"
+	"github.com/master312/ovpm"
 	"github.com/master312/ovpm/api/pb"
 	"github.com/master312/ovpm/permset"
 	"github.com/sirupsen/logrus"

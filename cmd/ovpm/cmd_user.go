@@ -5,7 +5,7 @@ import (
 	"net"
 
 	"github.com/asaskevich/govalidator"
-	"github.com/cad/ovpm"
+	"github.com/master312/ovpm"
 	"github.com/master312/ovpm/errors"
 	"github.com/urfave/cli"
 )

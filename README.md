@@ -3,7 +3,7 @@
 ![Build Status](https://github.com/master312/ovpm/workflows/Go/badge.svg)
 [![GitHub version](https://badge.fury.io/gh/cad%2Fovpm.svg)](https://badge.fury.io/gh/cad%2Fovpm)
 [![codecov](https://codecov.io/gh/cad/ovpm/branch/master/graph/badge.svg)](https://codecov.io/gh/cad/ovpm)
-[![GoDoc](https://godoc.org/github.com/cad/ovpm?status.svg)](https://godoc.org/github.com/cad/ovpm)
+[![GoDoc](https://godoc.org/github.com/master312/ovpm?status.svg)](https://godoc.org/github.com/master312/ovpm)
 
 *OVPM* allows you to administrate an **OpenVPN** server on linux easily via command line and web interface. 
 

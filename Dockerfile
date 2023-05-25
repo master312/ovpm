@@ -7,13 +7,13 @@ RUN curl -s https://mirror.go-repo.io/fedora/go-repo.repo | tee /etc/yum.repos.d
 RUN yum -y install golang ruby ruby-devel gcc make redhat-rpm-config git rpm-build rpmdevtools createrepo reprepro npm
 RUN gem install fpm
 
-VOLUME /fs/src/github.com/cad/ovpm
+VOLUME /fs/src/github.com/master312/ovpm
 
-ENV DIR="/fs/src/github.com/cad/ovpm"
+ENV DIR="/fs/src/github.com/master312/ovpm"
 ENV RELEASEDIR=$DIR/release
 ENV UNITDIR="/usr/lib/systemd/system/"
 ENV GOPATH="/fs/"
 
-WORKDIR /fs/src/github.com/cad/ovpm
+WORKDIR /fs/src/github.com/master312/ovpm
 
 CMD ["./build.sh"]

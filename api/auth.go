@@ -5,7 +5,7 @@ import (
 	"strings"
 
 	"github.com/sirupsen/logrus"
-	"github.com/cad/ovpm"
+	"github.com/master312/ovpm"
 	"github.com/master312/ovpm/permset"
 	gcontext "golang.org/x/net/context"
 	"google.golang.org/grpc"

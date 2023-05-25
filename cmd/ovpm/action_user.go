@@ -9,7 +9,7 @@ import (
 	"time"
 
 	"github.com/sirupsen/logrus"
-	"github.com/cad/ovpm"
+	"github.com/master312/ovpm"
 	"github.com/master312/ovpm/api/pb"
 	"github.com/master312/ovpm/errors"
 	humanize "github.com/dustin/go-humanize"
